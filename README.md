@@ -1,3 +1,6 @@
+# Socrata fork
+Fork of c3.js to switch a use of `selectAll(<array of selectors>)` to use a more common, comma-separated string of selectors. ( `["#thing1","#thing2"]` vs `"#thing1,#thing2"`) In our environment, somehow the code supporting the array form is nuked and does not result in the expected set of dom nodes. This results in `svg` chart elements that have a clipPath applied to them with an empty `<rect />` that cause them to not render.
+
 # c3
 
 [![CircleCI](https://circleci.com/gh/c3js/c3.svg?style=shield)](https://circleci.com/gh/c3js/c3)
